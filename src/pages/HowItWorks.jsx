@@ -1,0 +1,5 @@
+import{Link}from"react-router-dom"
+export default function HowItWorks(){return<div className="page" style={{paddingTop:32,paddingBottom:40}}>
+<h1 style={{fontSize:24,fontWeight:700,marginBottom:24}}>How MoneyScan works</h1>
+{[{t:"What we do",p:"MoneyScan checks whether you're owed money across 18+ UK claim categories. Free scan identifies what you may be eligible for. We generate personalised letters you send to claim your money back."},{t:"What we're NOT",p:"Not a claims company. No claims on your behalf. No success fees. No cold calls. We generate template letters — you send them."},{t:"Why it costs less",p:"Solicitors charge £200+ per letter. Claims companies take 25-30%. MoneyScan: £29.99 for all letters. You keep 100%."},{t:"Who we are",p:"CivicStack Ltd (Company 17099189). ICO registered (ZC106075). UK company building tools that help people claim what's theirs."}].map(s=><div key={s.t}><h2 style={{fontSize:17,fontWeight:700,marginBottom:8}}>{s.t}</h2><p style={{fontSize:14,color:"var(--text-mid)",marginBottom:20,lineHeight:1.7}}>{s.p}</p></div>)}
+<Link to="/" className="cta">Start Free Scan</Link></div>}
